@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em 1em 2em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nome-academia {
+    width: 10em;
+}
+
+.cabecalho_links {
+    display: flex;
+    gap: 4em;
+    list-style-type: none;
+}
+
+.menu-link {
+    font-weight: 500;
+    font-style: normal;
+    color: black;
+    text-decoration: none;
+    padding: 0.5em 1em 0.5em 1em;
+    cursor: pointer;
+    transition: transform 0.5s ease, background-color 0.5s ease, color 0.5s ease;
+    border-radius: 50px;
+}
+
+.menu-link:hover {
+    background-color: rgb(36, 36, 36);
+    color: white;
+}
+
+
+.buscar-academia {
+    background-color: #ff5c00;
+    border-radius: 50px;
+}
+
+.menu-search {
+    vertical-align: middle;
+}
+
+.menu-search:hover {
+    color: white;
+}
+
+.aside-button {
+    background: transparent;
+    border: 0;
+}
+
+.aside-button > span > i  {
+    color: #000000;
+    vertical-align: middle;
+    display: inline-block; 
+    transition: color 0.8s ease;
+    cursor: pointer;
+    font-size: 3em;    
+}
+
+.background-noclick {
+    display: none;
+}
+
+.background-noclick-active {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 2em 0 2em 1em;
+    background-color: rgba(181, 181, 181, 0.5);
+    width: 100vw;
+    height: 100vh;
+    border-radius: 15px 0 0 15px;
+}
+
+.menu-openclose:hover {
+    color: #ff5c00;    
+}
+
+
+.hoverclose:hover {
+    color: rgb(139, 139, 139);
+}
+
+.sidebar button i {
+    font-size: 100px;
+}
+
+.sidebar {
+    display: flex;
+    position: fixed;
+    right: -22em;
+    top: 0em;
+    padding: 2em 0 2em 1em;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px 0 0 15px;
+    transition: 1s;
+}
+
+.sidebar-active {
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 0em;
+    padding: 2em 0 2em 1em;
+    background-color: rgb(255, 255, 255);
+    width: 25vw;
+    height: 100vh;
+    border-radius: 15px 0 0 15px;
+    transition: 1s;
+}
+
+.aside-menu {
+    display: grid;
+    align-items: start;
+    justify-content: start;
+    top: 0;
+    left: 0;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+        "logo close"
+        "lista lista" 
+        "lista lista" 
+        "lista lista" 
+        "lista lista"    
+        "lista lista" 
+        "lista lista" 
+    ;
+}
+
+.nome-academia {
+    grid-area: logo;
+    padding: 0;
+}
+
+.close-button {
+    grid-area: close;
+    top: 0;
+    justify-self: end;
+    margin-right: 1em;
+}
+
+.close-button > span > i {
+    font-size: 40px;
+}
+
+.sidebar_lista {
+    grid-area: lista;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style-type: none;
+    gap: 1em;
+    
+}
+
+.asidebar_link {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: 0.5s;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.asidebar_link:hover {
+    background-color: rgba(red, green, blue, 0.5);
+    padding: 0.8em;
+    color: #8b8b8b;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+/* MAIN */
+
+.promocao {
+    display: flex;
+    justify-content: center;
+}
+
+.banner-promocao {
+    width: 98vw;
+    height: 80vh;
+    padding: 0.8em;
+    box-sizing: border-box; /* Inclui padding na largura total */
+    border-radius: 30px;
+    align-self: center;
+}
+
+.academia-busca{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.academia-busca_titulo {
+    font-size: 30px;
+    font-weight: 900;
+    padding: 1em;
+}
+
+.academia-busca_mapa {
+    width: 98vw;
+    height: 80vh;
+    padding: 0.8em;
+    box-sizing: border-box; /* Inclui padding na largura total */
+    border-radius: 30px;
+    align-self: center;
+}
+
+.academia-busca-cor {
+    position: absolute;
+    top: 128.5%;
+    width: 95.9vw;
+    height: 76vh;
+    padding: 0.8em;
+    box-sizing: border-box; /* Inclui padding na largura total */
+    border-radius: 18px;
+    align-self: center;
+    background-color: rgb(0, 0, 0);
+    z-index: 2;
+    opacity: 30%;
+}

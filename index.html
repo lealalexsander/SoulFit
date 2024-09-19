@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoulFit</title>
+    <link rel="shortcut icon" href="./src/icone-soulfit.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Inconsolata:wght@200..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+</head>
+<body>
+    <header>
+        <nav class="cabecalho">
+            <a href="#"><img class="nome-academia" src="./src/nome-soulfit.png" alt="SoulFit"></a>
+            <ul class="cabecalho_links">
+                <li><a class="menu-link" href="#">Academias</a></li>
+                <li><a class="menu-link" href="#">Espaço do Cliente</a></li>
+                <li><a class="menu-link" href="#">Seja um Franqueado</a></li>
+                <li><a class="menu-link buscar-academia" href="#">Buscar Academia <i class="menu-search material-symbols-outlined"> search </i></a></li>
+            </ul>
+            <button class="aside-button" onclick="aparecerMenu()">
+                <span>
+                    <i class="menu-openclose material-symbols-outlined"> menu </i>
+                </span>
+            </button>
+            <div class="background-noclick" onclick="aparecerMenu()" id="background-noclick"></div>
+            <aside class="sidebar" id="sidebar">
+                <nav class="aside-menu">
+                    <img class="nome-academia" src="./src/nome-soulfit.png" alt="SoulFit">
+                    <button class="aside-button close-button" onclick="aparecerMenu()">
+                        <span>
+                            <i class="menu-openclose hoverclose material-symbols-outlined"> close </i>
+                        </span>
+                    </button>
+                    <ul class="sidebar_lista">    
+                        <li><a class="asidebar_link" href="#">Home</a></li>
+                        <li><a class="asidebar_link" href="#">Academias</a></li>
+                        <li><a class="asidebar_link" href="#">Espaço do Cliente</a></li>
+                        <li><a class="asidebar_link" href="#">SoulFit News</a></li>
+                        <li><a class="asidebar_link" href="#">Planos</a></li>
+                        <li><a class="asidebar_link" href="#">Nossa História</a></li>
+                    </ul>
+                </nav>
+
+            </aside>
+        </nav>
+    </header>
+    <main>
+        <section class="promocao">
+            <a href="#"><img class="banner-promocao" src="./src/bannerpromocao.jpg" alt="banner de promoção"></a>
+        </section>
+        <section class="academia-busca">
+            <h2 class="academia-busca_titulo">Encontre a academia mais <strong>perto de você!</strong></h2>
+            <img class="academia-busca_mapa" src="./src/mapa.png" alt="mapa da localização">
+            <div class="academia-busca-cor"></div>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="script.js"></script>
+</body>
+</html>
