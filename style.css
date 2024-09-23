@@ -71,14 +71,15 @@
 }
 
 .background-noclick-active {
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 0;
     padding: 2em 0 2em 1em;
     background-color: rgba(181, 181, 181, 0.5);
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     border-radius: 15px 0 0 15px;
+    z-index: 1;
 }
 
 .menu-openclose:hover {
@@ -107,7 +108,7 @@
 
 .sidebar-active {
     display: flex;
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 0em;
     padding: 2em 0 2em 1em;
@@ -116,6 +117,7 @@
     height: 100vh;
     border-radius: 15px 0 0 15px;
     transition: 1s;
+    z-index: 2;
 }
 
 .aside-menu {
@@ -202,30 +204,166 @@
 }
 
 .academia-busca_titulo {
-    font-size: 30px;
+    font-size: 2em;
     font-weight: 900;
     padding: 1em;
 }
 
+.academia-busca_texto {
+    color: #ff5c00;
+}
+
 .academia-busca_mapa {
     width: 98vw;
-    height: 80vh;
+    height: 70vh;
     padding: 0.8em;
     box-sizing: border-box; /* Inclui padding na largura total */
     border-radius: 30px;
     align-self: center;
 }
 
-.academia-busca-cor {
+.academia-busca_academias {
     position: absolute;
-    top: 128.5%;
-    width: 95.9vw;
-    height: 76vh;
-    padding: 0.8em;
-    box-sizing: border-box; /* Inclui padding na largura total */
-    border-radius: 18px;
+    margin-top: 3.7em;
+    font-size: 1.3em;
+    padding: 0.6em 6em 0.6em 6em;
+    background-color: #000000;
+    border-radius: 40px;
+    text-decoration: none;
+    color: white;
+    display: flex; /* Adicione esta linha */
+    justify-content: space-between; /* Adicione esta linha */
+    align-items: center; 
+    transition: 0.5s;
+    border: white outset 2px;
+}
+
+.academia-menu-search {
+    position: absolute;
+    margin-left: 11em;     
+}
+
+.academia-busca_academias:hover {
+    background-color: #ff5c00;
+    color: #000000;
+    font-weight: 700;
+    border: white inset 2px;
+}
+
+
+/*Seção valores */
+
+.valores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.valores_titulo {
+    font-size: 2em;
+    padding: 1em 0 0 0;
+}
+
+.valores_subtitulo {
+    font-size: 1.2em;
+    font-weight: 300;
+
+}
+
+/* Tabela de valores */
+
+.tabela_planos {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 2em;
+    padding: 2em;
+}
+
+.tabela_beneficios {
+    font-size: 1.2em;
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.tabela_plano_beneficio {
+    width: 1.8em; 
+}
+
+.tabela_beneficios_escrito {
+    padding-top: 3.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.84em;
+}
+
+.tabela_linha {
+    height: 0.1px;
+    background-color: gray;
+    width: 275%;
+}
+
+.tabela_planoblack, .tabela_planofit, .tabela_planosoul {
+    font-size: 1.2em;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1em 0em 1em;
+}
+
+.tabela_imagens {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.9em;
+    gap: 1.05em;
+}
+
+.tabela_condicoes {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+    margin-top: 2em;
+}
+
+.tabela_planoblack {
+    border: #ff5c00 solid 1.5px;
+    border-radius: 20px;
+}
+
+.tabela_titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tabela_titulo_invisivel{
+    color: transparent;
+    pointer-events: none;
+    user-select: none;
+}
+
+.tabela_titulo_escrito {
+    padding: 0.8em 0 0.2em 0;
+}
+
+.tabela_titulo_paragrafo {
     align-self: center;
-    background-color: rgb(0, 0, 0);
-    z-index: 2;
-    opacity: 30%;
+    color: gray;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.tabela_plano_meses {
+    font-size: 0.8em;
+    color: gray;
+}
+
+.tabela_plano_mensal {
+    font-size: 1em;
+}
+
+.beneficios_academias {
+    margin: 5em 1em;
+    color: #8b8b8b;
 }
