@@ -209,7 +209,7 @@
     padding: 1em;
 }
 
-.academia-busca_texto {
+.texto_diferente {
     color: #ff5c00;
 }
 
@@ -275,8 +275,9 @@
 .tabela_planos {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr;
-    gap: 2em;
-    padding: 2em;
+    gap: 32px;
+    padding: 32px;
+    width: 75em;
 }
 
 .tabela_beneficios {
@@ -288,6 +289,7 @@
 
 .tabela_plano_beneficio {
     width: 1.8em; 
+    
 }
 
 .tabela_beneficios_escrito {
@@ -308,7 +310,7 @@
     display: flex; 
     flex-direction: column;
     align-items: center;
-    padding: 0 1em 0em 1em;
+    padding: 0 16px 0 16px;
 }
 
 .tabela_imagens {
@@ -351,7 +353,7 @@
     align-self: center;
     color: gray;
     text-align: center;
-    font-size: 0.8em;
+    font-size: 15px;
 }
 
 .tabela_plano_meses {
@@ -366,4 +368,87 @@
 .beneficios_academias {
     margin: 5em 1em;
     color: #8b8b8b;
+}
+
+
+/* Experiência Soulfit */
+
+.experiencia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.experiencia_fotos {
+    display: flex;
+    gap: 3em;
+    padding: 3em;
+}
+
+.experiencia_titulo {
+    padding-top: 3em;
+    font-size: 2em;
+}
+
+.equipamento_foto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 1px 10px gray;
+    border-radius: 15px;
+    width: 20em;
+    transition: ease 0.3s transform;
+    cursor: pointer;
+}
+
+.equipamento_foto:hover {
+    transform: scale(1.2);
+    box-shadow: 2px 1px 10px #ff5c00;}
+
+.experiencia_imagem {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+.experiencia_paragrafo {
+    padding: 1em;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.8); 
+}
+
+.modal-content {
+    margin: auto;
+    padding-top: 2em;
+    display: block;
+    width: 80%; 
+    max-width: 700px; 
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#caption {
+    margin: auto;
+    text-align: center;
+    color: white;
+    padding: 10px 0;
+    width: 80%;
 }

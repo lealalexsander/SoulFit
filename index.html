@@ -54,12 +54,12 @@
             <a href="#"><img class="banner-promocao" src="./src/bannerpromocao.jpg" alt="banner de promoção"></a>
         </section>
         <section class="academia-busca">
-            <h2 class="academia-busca_titulo">Encontre a academia mais <strong class="academia-busca_texto">perto de você!</strong></h2>
+            <h2 class="academia-busca_titulo">Encontre a academia mais <strong class="texto_diferente">perto de você!</strong></h2>
             <img class="academia-busca_mapa" src="./src/mapa.png" alt="mapa da localização">
             <a class="academia-busca_academias" href="#">Escolher Academia<i class="academia-menu-search material-symbols-outlined"> search </i></a>
         </section>
         <section class="valores">
-            <h2 class="valores_titulo">Venha treinar na <strong class="academia-busca_texto">maior rede de Academias do Mundo</strong></h2>
+            <h2 class="valores_titulo">Venha treinar na <strong class="texto_diferente">maior rede de Academias do Mundo</strong></h2>
             <h4 class="valores_subtitulo">Os melhores equipamentos e infraestrutura espalhados em mais de 54 países!</h4>
             <div class="tabela_planos">
                 <div class="tabela_beneficios">
@@ -107,7 +107,7 @@
                 <div class="tabela_planofit">
                     <div class="tabela_titulo">
                         <h3 class="tabela_titulo_escrito">Plano Fit</h3>
-                        <p class="tabela_titulo_paragrafo">Nosso plano mais econômico para você se exercitar quando e quanto quiser na academia que escolher!</p>
+                        <p class="tabela_titulo_paragrafo">Nosso plano mais econômico para você se exercitar quando e quanto quiser na academia <br>que escolher!</p>
                     </div>         
                     <div class="tabela_imagens">           
                         <img class="tabela_plano_beneficio" src="./src/x-image.png" alt="imagem não de pode ser utilizado">
@@ -146,6 +146,31 @@
                 </div>
             </div>
         </section>
+        <section class="experiencia">
+    <h2 class="experiencia_titulo">Experiência <strong class="texto_diferente">SoulFit</strong></h2>
+    <div class="experiencia_fotos">
+        <div class="equipamento_foto">
+            <img class="experiencia_imagem" src="./src/equipamentos.png" alt="equipamento de musculação" onclick="openModal(this)">
+            <p class="experiencia_paragrafo">Equipamentos de última geração</p>
+        </div>
+        <div class="equipamento_foto">
+            <img class="experiencia_imagem" src="./src/hidroginastica.jpg" alt="piscina de hidroginástica" onclick="openModal(this)">
+            <p class="experiencia_paragrafo">Modalidades Aquáticas*</p>
+        </div>
+        <div class="equipamento_foto">
+            <img class="experiencia_imagem" src="./src/aerobico.jpg" alt="bicicletas ergométricas" onclick="openModal(this)">
+            <p class="experiencia_paragrafo">Todo tipo de equipamento aeróbico</p>
+        </div>
+    </div>
+    
+    <!-- Modal -->
+    <div id="modal" class="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-img">
+        <div id="caption"></div>
+    </div>
+</section>
+
     </main>
     <footer></footer>
     <script src="script.js"></script>
