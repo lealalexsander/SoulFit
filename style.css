@@ -452,3 +452,149 @@
     padding: 10px 0;
     width: 80%;
 }
+
+
+/* Seção Exclusividade */
+
+.exclusividade {
+    padding: 0 10em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.exclusividade_titulo_principal {
+    text-align: center;
+    padding: 2em 0 2em 0 ;
+    font-size: 2em;
+}
+
+.exclusividade_treinos {
+    display: flex;
+    gap: 3em;
+}
+
+.treinos_exclusivos {
+    display: grid;
+    grid-template-areas:
+        "imagem imagem" 
+        "titulo titulo"
+        "iconduracao iconenergia"
+        "duracao intensidade"
+        "duracaoresp intensidaderesp"
+        "linha linha"
+        "descricao descricao"
+        "saiba saiba"
+    ;
+    justify-items: center;
+    box-shadow: 1px 4px 10px gray;
+    width: 280px;
+    border-radius: 10px;
+    transition: transform ease 0.3s;
+}
+
+.treinos_exclusivos:hover {
+    outline: #ff5c00 solid 2px;
+}
+
+.exclusividade_imagem {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    grid-area: imagem;
+
+}
+.exclusividade_titulo {
+    padding: 1em 0;
+    width: 100%;
+    font-size: 14px;
+    background-color: #ff5c00;
+    grid-area: titulo;
+    text-align: center;
+}
+
+.exclusividade_energia-imagem {
+    grid-area: iconduracao;
+}
+
+.exclusividade_tempo-imagem {
+    grid-area: iconenergia;
+}
+
+.exclusividade_icone {
+    width: 2em;
+    padding: 1em 0 0.5em 0;
+}
+
+.exclusividade_duracao-paragrafo {
+    grid-area: duracao;
+    color: #ff5c00;
+    font-weight: 600;
+}
+
+.exclusividade_duracao-resposta {
+    grid-area: duracaoresp;
+    font-size: 13px;
+    margin-top: 0.2em;
+}
+
+.exclusividade_intensidade-paragrafo {
+    grid-area: intensidade;
+    color: #ff5c00;
+    font-weight: 600;
+}
+
+.exclusividade_intensidade-resposta {
+    grid-area: intensidaderesp;
+    font-size: 13px;
+    margin-top: 0.2em
+}
+
+.exclusividade_linha {
+    height: 1px;
+    width: 90%;
+    grid-area: linha;
+    background-color: gray;
+    margin: 1em;
+}
+
+.exclusividade_descricao {
+    grid-area: descricao;
+    text-align: center;
+    font-size: 15px;
+    padding: 0em 1em;
+}
+
+.exclusividade_saibamais {
+    grid-area: saiba;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    margin: 1em;
+    color: white;
+    background-color: #ff5c00;
+    border: white 5px solid;
+    border-radius: 30px;
+    transition: ease 0.5s;
+}
+
+.exclusividade_saibamais:hover {
+    background-color: rgb(36, 36, 36);
+    color: white;
+}
+
+.exclusividade_ver-treinos {
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 700;
+    padding: 0.6em 4em;
+    margin: 1em;
+    color: rgb(0, 0, 0);
+    background-color: #ff5c00;
+    border-radius: 30px;
+    transition: ease 0.5s;
+}
+
+.exclusividade_ver-treinos:hover {
+    background-color: rgb(36, 36, 36);
+    color: white;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.2);
+}
