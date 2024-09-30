@@ -182,17 +182,18 @@
 
 /* MAIN */
 
+
 .promocao {
     display: flex;
     justify-content: center;
 }
 
 .banner-promocao {
-    width: 95vw;
+    width: 98vw;
     height: 80vh;
     padding: 0.8em;
     box-sizing: border-box; /* Inclui padding na largura total */
-    border-radius: 30px;
+    border-radius: 20px;
     align-self: center;
 }
 
@@ -214,11 +215,11 @@
 }
 
 .academia-busca_mapa {
-    width: 95vw;
+    width: 98vw;
     height: 70vh;
     padding: 0.8em;
     box-sizing: border-box; /* Inclui padding na largura total */
-    border-radius: 30px;
+    border-radius: 20px;
     align-self: center;
 }
 
@@ -608,7 +609,7 @@
     padding: 5em;
     display: flex;
     justify-content: space-between;
-    margin: 2em 0 2em 0;
+    margin: 2em 0 0em 0;
 }
 
 .app_descricao {
@@ -647,4 +648,79 @@
     border-bottom: 20px solid transparent;
     border-left: 50px solid #ff5c00; /* Cor da flecha */
     align-self: center;
+}
+
+
+/* Footer */
+
+footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #000000;
+    gap: 2em;
+    color: white;
+    padding: 2em;
+}
+
+.footer-linha {
+    height: 0.1px;
+    width: 95%;
+    background-color: #ffffff;
+}
+
+.footer_redes-sociais {
+   display: flex;
+   gap: 1em;
+}
+
+
+.footer_redes_titulo {
+
+}
+
+.footer_rede_icone {
+    width: 30px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 0.2em;
+    transition: ease 0.3s;
+}
+
+.footer_rede_icone:hover {
+    background-color: rgba(255, 255, 255, 0.55)
+}
+
+.footer_principal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+}
+
+.footer_principal_lista {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.footer_titulo-secundario {
+
+}
+
+.footer_link {
+    text-decoration: none;
+    color: white;
+    transition: ease 0.2s;
+    font-size: 14px;
+}
+
+.footer_link:hover {
+    color: #c9c9c9;
+    margin: 0 0 0 0.5em;
+}
+
+.footer_transparente {
+    color: transparent;
+    pointer-events: none;
 }
