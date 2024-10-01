@@ -16,10 +16,11 @@
     <header>
         <nav class="cabecalho">
             <a href="#"><img class="nome-academia" src="./src/nome-soulfit.png" alt="logo SoulFit"></a>
+            <a href="#"><img class="logo-academia" src="./src/logo-academia.png" alt="logo SoulFit"></a>
             <ul class="cabecalho_links">
-                <li><a class="menu-link" href="#">Academias</a></li>
-                <li><a class="menu-link" href="#">Espaço do Cliente</a></li>
-                <li><a class="menu-link" href="#">Seja um Franqueado</a></li>
+                <li><a class="menu-link cabecalho_academias" href="#">Academias</a></li>
+                <li><a class="menu-link cabecalho_cliente" href="#">Espaço do Cliente</a></li>
+                <li><a class="menu-link cabecalho_franqueado" href="#">Seja um Franqueado</a></li>
                 <li><a class="menu-link buscar-academia" href="#">Buscar Academia <i class="menu-search material-symbols-outlined"> search </i></a></li>
             </ul>
             <button class="aside-button" onclick="aparecerMenu()">
@@ -30,7 +31,10 @@
             <div class="background-noclick" onclick="aparecerMenu()" id="background-noclick"></div>
             <aside class="sidebar" id="sidebar">
                 <nav class="aside-menu">
-                    <img class="nome-academia" src="./src/nome-soulfit.png" alt="SoulFit">
+                    <img class="nome-academia" src="./src/nome-soulfit.png" 
+                    alt="SoulFit">
+                    <a href="#"><img class="logo-academia" src="./src/logo-academia.png" alt="logo SoulFit"></a>
+                    
                     <button class="aside-button close-button" onclick="aparecerMenu()">
                         <span>
                             <i class="menu-openclose hoverclose material-symbols-outlined"> close </i>
@@ -52,10 +56,12 @@
     <main>
         <section class="promocao">
             <a href="#"><img class="banner-promocao" src="./src/bannerpromocao.png" alt="banner de promoção"></a>
+            <a href="#"><img class="banner-promocao-mobile" src="./src/banner-promocao-mobile.png" alt="banner de promoção"></a>
         </section>
         <section class="academia-busca">
             <h2 class="academia-busca_titulo">Encontre a academia mais <strong class="texto_diferente">perto de você!</strong></h2>
             <img class="academia-busca_mapa" src="./src/mapa.png" alt="mapa da localização">
+            <img class="busca-mobile" src="./src/busca-mobile.png" alt="mapa da localização">
             <a class="academia-busca_academias" href="#">Escolher Academia<i class="academia-menu-search material-symbols-outlined"> search </i></a>
         </section>
         <section class="valores">

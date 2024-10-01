@@ -16,6 +16,10 @@
     width: 10em;
 }
 
+.logo-academia {
+    display: none;
+}
+
 .cabecalho_links {
     display: flex;
     gap: 4em;
@@ -197,6 +201,10 @@
     align-self: center;
 }
 
+.banner-promocao-mobile {
+    display: none;
+}
+
 .academia-busca{
     display: flex;
     flex-direction: column;
@@ -221,6 +229,10 @@
     box-sizing: border-box; /* Inclui padding na largura total */
     border-radius: 20px;
     align-self: center;
+}
+
+.busca-mobile {
+    display: none;
 }
 
 .academia-busca_academias {
@@ -578,6 +590,7 @@
     border: white 5px solid;
     border-radius: 30px;
     transition: ease 0.5s;
+    align-self: center;
 }
 
 .exclusividade_saibamais:hover {
@@ -594,6 +607,7 @@
     background-color: #ff5c00;
     border-radius: 30px;
     transition: ease 0.5s;
+    color: white;
 }
 
 .exclusividade_ver-treinos:hover {
@@ -666,7 +680,7 @@ footer {
 .footer-linha {
     height: 0.1px;
     width: 95%;
-    background-color: #ffffff;
+    background-color: #484848;
 }
 
 .footer_redes-sociais {
@@ -723,4 +737,99 @@ footer {
 .footer_transparente {
     color: transparent;
     pointer-events: none;
+}
+
+@media screen and (max-width: 430px) {
+    
+    .cabecalho {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5em 1em;
+    }
+
+    .cabecalho_links {
+        display: block;
+    }
+
+    .nome-academia {
+        display: none;
+    }
+
+    .logo-academia {
+        display: block;
+        width: 60px;
+        margin-right: 6em;
+    }
+
+    .menu-link {
+        display: none;
+    }
+
+    .buscar-academia {
+        display: block;
+    }
+
+    .sidebar-active {
+        display: flex;
+        position: fixed;
+        left: 0;
+        top: 0em;
+        padding: 2em 0 2em 1em;
+        background-color: rgb(255, 255, 255);
+        width: 99vw;
+        height: 100vh;
+        border-radius: 15px 0 0 15px;
+        transition: 1s;
+        z-index: 2;
+    }
+    
+    .menu-openclose {
+        align-self: right;
+    }
+
+    /* SEÇÃO PROMOÇÃO */
+
+    .banner-promocao {
+        display: none;
+    }
+
+    .banner-promocao-mobile {
+        display: block;
+        width: 95vw;
+        height: 700px;
+        padding: 1em;
+        border-radius: 30px;
+    }
+
+    
+    /* SEÇÃO busca */
+
+
+    .academia-busca_mapa {
+       display: none;
+    }
+    
+    .busca-mobile {
+        display: block;
+        width: 95vw;
+        height: 250px;
+        border-radius: 20px;
+    }
+
+    .academia-busca_academias {
+        position: absolute;
+        margin-top: 5.5em;
+        font-size: 1.3em;
+        padding: 0.6em 4em 0.6em 4em;
+        background-color: rgba(0, 0, 0, 0.8);
+        border-radius: 10px;
+        text-decoration: none;
+        color: white;
+        display: flex; /* Adicione esta linha */
+        justify-content: space-between; /* Adicione esta linha */
+        align-items: center; 
+        transition: 0.5s;
+        border: white outset 2px;
+    }
 }
