@@ -20,6 +20,14 @@
     display: none;
 }
 
+.logo-academia-mobile {
+    display: none;
+}
+
+.aside_titulo-mobile{
+    display: none;
+}
+
 .cabecalho_links {
     display: flex;
     gap: 4em;
@@ -29,7 +37,7 @@
 .menu-link {
     font-weight: 500;
     font-style: normal;
-    color: black;
+    color: #000000;
     text-decoration: none;
     padding: 0.5em 1em 0.5em 1em;
     cursor: pointer;
@@ -759,7 +767,27 @@ footer {
     .logo-academia {
         display: block;
         width: 60px;
-        margin-right: 6em;
+        margin: 0.5em 6em 0.5em 0;
+        align-self: center;
+    }
+
+    .aside-mobile-titulo-logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5em;
+    }
+
+    .logo-academia-mobile {
+        display: block;
+        width: 60px;
+        margin: 0.5em 0em 0.5em 0;
+        align-self: center; 
+    }
+
+    .aside_titulo-mobile {
+        display: block;
+        font-size: 32px;
     }
 
     .menu-link {
@@ -770,22 +798,48 @@ footer {
         display: block;
     }
 
+
+    .aside-menu {
+        grid-template-areas: 
+            "logo close"
+            "lista lista" 
+        
+        ;
+        width: 100vw;
+        height: 50px;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .asidebar_link {
+        font-size: 25px;
+    }
+
     .sidebar-active {
         display: flex;
         position: fixed;
-        left: 0;
+        right: 0;
         top: 0em;
         padding: 2em 0 2em 1em;
         background-color: rgb(255, 255, 255);
-        width: 99vw;
+        width: 90vw;
         height: 100vh;
         border-radius: 15px 0 0 15px;
         transition: 1s;
         z-index: 2;
+        border: gray solid 2px;
+    }
+
+    .sidebar_lista {
+        padding: 1em 0.4em;  
+        gap: 2em; 
     }
     
-    .menu-openclose {
+    .menu-openclose-mobile {
         align-self: right;
+        margin-right: 1em;
+        font-size: 30px;
     }
 
     /* SEÇÃO PROMOÇÃO */
@@ -806,6 +860,10 @@ footer {
     /* SEÇÃO busca */
 
 
+    .academia-busca_titulo {
+        text-align: center;
+    }
+
     .academia-busca_mapa {
        display: none;
     }
@@ -813,23 +871,29 @@ footer {
     .busca-mobile {
         display: block;
         width: 95vw;
-        height: 250px;
+        height: 220px;
         border-radius: 20px;
+    }
+
+    .academia-menu-search {
+        margin-left: 9em;
     }
 
     .academia-busca_academias {
         position: absolute;
-        margin-top: 5.5em;
+        margin-top: 6em;
         font-size: 1.3em;
         padding: 0.6em 4em 0.6em 4em;
-        background-color: rgba(0, 0, 0, 0.8);
-        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 1);
+        border-radius: 30px;
         text-decoration: none;
-        color: white;
+        color: rgb(0, 0, 0);
         display: flex; /* Adicione esta linha */
         justify-content: space-between; /* Adicione esta linha */
         align-items: center; 
         transition: 0.5s;
-        border: white outset 2px;
+        border: none;
+        font-weight: 700;
     }
+    
 }
