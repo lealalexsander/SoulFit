@@ -226,6 +226,10 @@
     padding: 1em;
 }
 
+.br-busca {
+    display: none;
+}
+
 .texto_diferente {
     color: #ff5c00;
 }
@@ -299,6 +303,10 @@
     gap: 32px;
     padding: 32px;
     width: 75em;
+}
+
+.tabela_planos-mobile {
+    display: none;
 }
 
 .tabela_beneficios {
@@ -862,6 +870,7 @@ footer {
 
     .academia-busca_titulo {
         text-align: center;
+        font-size: 1.5em;
     }
 
     .academia-busca_mapa {
@@ -876,14 +885,14 @@ footer {
     }
 
     .academia-menu-search {
-        margin-left: 9em;
+        margin-left: 7em;
     }
 
     .academia-busca_academias {
         position: absolute;
-        margin-top: 6em;
-        font-size: 1.3em;
-        padding: 0.6em 4em 0.6em 4em;
+        margin-top: 10em;
+        font-size: 0.8em;
+        padding: 1em 8em 1em 8em;
         background-color: rgba(255, 255, 255, 1);
         border-radius: 30px;
         text-decoration: none;
@@ -895,5 +904,31 @@ footer {
         border: none;
         font-weight: 700;
     }
+
+    .br-busca {
+        display: block;
+    }
+
+    .valores_titulo {
+        text-align: center;
+        font-size: 1.5em;
+    }
     
+    .valores_subtitulo {
+        text-align: center;
+    }
+
+    .tabela_planos {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .tabela_planos {
+        display: none;
+    }
+
+    .tabela_planos-mobile {
+        display: flex;
+    }
 }
