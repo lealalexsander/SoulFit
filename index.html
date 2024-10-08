@@ -128,7 +128,7 @@
                     <div class="tabela_condicoes">
                         <p class="tabela_plano_apartir">A PARTIR DE</p>
                         <p class="tabela_plano_preco"><strong>R$0,00*</strong></p>
-                        <p class="tabela_plano_mensal"><strong>no 1º mês</strong>, depois<br> R$ 99,90/mês</p>
+                        <p class="tabela_plano_mensal"><strong>no 1º mês</strong>, depois<br> R$ 119,90/mês</p>
                         <p class="tabela_plano_meses">12 meses de fidelidade</p>
                     </div>
                 </div>
@@ -148,28 +148,73 @@
                     <div class="tabela_condicoes">
                         <p class="tabela_plano_apartir">A PARTIR DE</p>
                         <p class="tabela_plano_preco"><strong>R$0,00*</strong></p>
-                        <p class="tabela_plano_mensal"><strong>no 1º mês</strong>, depois<br> R$ 119,90/mês</p>
+                        <p class="tabela_plano_mensal"><strong>no 1º mês</strong>, depois<br> R$ 99,90/mês</p>
                         <p class="tabela_plano_meses">12 meses de fidelidade</p>
                     </div>
                 </div>
             </div>
 
             <div class=".tabela_planos-mobile">
-                <div class="plano_black-mobile">
-                    <h2 class="plano_black-mobile_titulo">Plano <strong>Black</strong></h2>
-                    <p class="plano_black-mobile-parafrago">Treine em qualquer academia da SoulFit, seja no Brasil ou na América Latina. São +1.500 unidades em 15 países!</p>
-                    <h1 class="plano_black-mobile-valor">R$ 00,00*</h1>
-                    <p class="plano_black-mobile-excecao"><strong>no 1° mês</strong>, depois 139,90</p>
-                    <p class="plano_black-fidelidade">12 meses de fidelidade</p>
-                    <a href="#" class="plano_black-mobile-botao"></a>
-                    <div class="tabela_beneficios_escrito">
-                        <p class="plano_black-mobile-beneficios"><img class="tabela_plano_beneficio" src="src/icon/done.png" alt="imagem de pode ser utilizado">Acesso ilimitado a +1.500 academias</p>
-                        <p class="plano_black-mobile-beneficios"><img class="tabela_plano_beneficio" src="src/icon/done.png" alt="imagem de pode ser utilizado">Leve 5 amigos por mês para treinar com você</p>
-                        <p class="plano_black-mobile-beneficios">Cadeira de massagem<img class="tabela_plano_beneficio" src="src/icon/done.png" alt="imagem de pode ser utilizado"></p>
-                        <p class="plano_black-mobile-beneficios">SoulFit (treinos online) no app<img class="tabela_plano_beneficio" src="src/icon/done.png" alt="imagem de pode ser utilizado">Área de musculação e aeróbicos</p>
-                        <p class="plano_black-mobile-beneficios"><img class="tabela_plano_beneficio" src="src/icon/done.png" alt="imagem de pode ser utilizado">SoulFit App</p>
-                        <p class="plano_black-mobile-beneficios"><img class="tabela_plano_beneficio" src="src/icon/done.png" alt="imagem de pode ser utilizado">Confira as condições da academia escolhida*</p>
+                <div class="plano_mobile">
+                    <h2 class="plano_mobile_titulo">Plano <strong>Black</strong></h2>
+                    <p class="plano_mobile-paragrafo">Treine em qualquer academia da SoulFit, seja no Brasil ou na América Latina. São +1.500 unidades em 15 países!</p>
+                    <h1 class="plano_mobile-valor">R$ 00,00*</h1>
+                    <div class="plano_mobile-paragrafo_secundario">
+                        <p class="plano_mobile-excecao"><strong>no 1° mês</strong>, depois 139,90 /mês</p>
+                        <p class="plano_mobile-fidelidade">12 meses de fidelidade</p>
                     </div>
+                        <a href="#" class="plano_mobile-botao">Começar Agora</a>
+                    <div id="tabela-active_1" class="tabela-desactive_1" onclick="mostrarMenos1()">
+                        <p class="plano_mobile-beneficios"><img class="tabela_plano_beneficio" src="src/icon/done.png" alt="imagem de pode ser utilizado">Acesso ilimitado a +1.500 academias</p>
+                        <p class="plano_mobile-beneficios"><img class="tabela_plano_beneficio" src="src/icon/done.png" alt="imagem de pode ser utilizado">Leve 5 amigos por mês para treinar com você</p>
+                        <p class="plano_mobile-beneficios"><img class="tabela_plano_beneficio" src="src/icon/done.png" alt="imagem de pode ser utilizado">SoulFit (treinos online) no app</p>
+                        <p class="plano_mobile-beneficios"><img class="tabela_plano_beneficio" src="src/icon/done.png" alt="imagem de pode ser utilizado">Cadeira de massagem</p>
+                        <p class="plano_mobile-beneficios"><img class="tabela_plano_beneficio" src="src/icon/done.png" alt="imagem de pode ser utilizado">Área de musculação e aeróbicos</p>
+                        <p class="plano_mobile-beneficios"><img class="tabela_plano_beneficio" src="src/icon/done.png" alt="imagem de pode ser utilizado">SoulFit App</p>
+                    </div>
+                    <button id="button-plano_1" class="plano_mobile_button" onclick="mostrarMenos1()">
+                        <h3 class="button_texto">Mostrar mais</h3>
+                        <img id="button_seta" class="button_seta" src="./src/icon/seta-para-baixo.png" alt="seta para cima">
+                    </button>
+                </div>
+                <div class="plano_mobile">
+                    <h2 class="plano_mobile_titulo">Plano <strong>Fit</strong></h2>
+                    <p class="plano_mobile-paragrafo">Nosso plano mais econômico para você se exercitar quando e quanto quiser na academia que escolher!</p>
+                    <h1 class="plano_mobile-valor">R$ 00,00*</h1>
+                    <div class="plano_mobile-paragrafo_secundario">
+                        <p class="plano_mobile-excecao"><strong>no 1° mês</strong>, depois R$ 119,90/mês</p>
+                        <p class="plano_mobile-fidelidade">12 meses de fidelidade</p>
+                    </div>
+                        <a href="#" class="plano_mobile-botao">Começar Agora</a>
+                    <div id="tabela-active_2" class="tabela-desactive_2" onclick="mostrarMenos2()">
+                        <p class="plano_mobile-beneficios"><img class="tabela_plano_beneficio" src="src/icon/done.png" alt="imagem de pode ser utilizado">SoulFit (treinos online) no app</p>
+                        <p class="plano_mobile-beneficios"><img class="tabela_plano_beneficio" src="src/icon/done.png" alt="imagem de pode ser utilizado">Cadeira de massagem</p>
+                        <p class="plano_mobile-beneficios"><img class="tabela_plano_beneficio" src="src/icon/done.png" alt="imagem de pode ser utilizado">Área de musculação e aeróbicos</p>
+                        <p class="plano_mobile-beneficios"><img class="tabela_plano_beneficio" src="src/icon/done.png" alt="imagem de pode ser utilizado">SoulFit App</p>
+                    </div>
+                    <button id="button-plano_2" class="plano_mobile_button" onclick="mostrarMenos2()">
+                        <h3 class="button_texto">Mostrar mais</h3>
+                        <img id="button_seta" class="button_seta" src="./src/icon/seta-para-baixo.png" alt="seta para cima">
+                    </button>
+                </div>
+                <div class="plano_mobile">
+                    <h2 class="plano_mobile_titulo">Plano <strong>Black</strong></h2>
+                    <p class="plano_mobile-paragrafo">Nosso plano mensal para você que não quer se comprometer, mas quer treinar em uma academia de alto padrão!</p>
+                    <h1 class="plano_mobile-valor">R$ 00,00*</h1>
+                    <div class="plano_mobile-paragrafo_secundario">
+                        <p class="plano_mobile-excecao"><strong>no 1° mês</strong>, depois 99,90 /mês</p>
+                        <p class="plano_mobile-fidelidade">12 meses de fidelidade</p>
+                    </div>
+                        <a href="#" class="plano_mobile-botao">Começar Agora</a>
+                    <div id="tabela-active_3" class="tabela-desactive_3" onclick="mostrarMenos3()">
+                        <p class="plano_mobile-beneficios"><img class="tabela_plano_beneficio" src="src/icon/done.png" alt="imagem de pode ser utilizado">SoulFit (treinos online) no app</p>
+                        <p class="plano_mobile-beneficios"><img class="tabela_plano_beneficio" src="src/icon/done.png" alt="imagem de pode ser utilizado">Área de musculação e aeróbicos</p>
+                        <p class="plano_mobile-beneficios"><img class="tabela_plano_beneficio" src="src/icon/done.png" alt="imagem de pode ser utilizado">SoulFit App</p>
+                    </div>
+                    <button id="button-plano_3" class="plano_mobile_button" onclick="mostrarMenos3()">
+                        <h3 class="button_texto">Mostrar mais</h3>
+                        <img id="button_seta" class="button_seta" src="./src/icon/seta-para-baixo.png" alt="seta para cima">
+                    </button>
                 </div>
             </div>
         </section>

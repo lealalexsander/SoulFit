@@ -305,6 +305,10 @@
     width: 75em;
 }
 
+.plano_mobile {
+    display: none;
+}
+
 .tabela_planos-mobile {
     display: none;
 }
@@ -930,5 +934,114 @@ footer {
 
     .tabela_planos-mobile {
         display: flex;
+    }
+
+    .plano_mobile {
+        margin: 2em;
+        display: flex;
+        gap: 1em;
+        flex-direction: column;
+        padding: 1.3em;
+        border: #656565 solid 0.5px;
+        border-radius: 10px;
+        width: 80vw;
+    }
+
+    .plano_mobile_titulo {
+        font-size: 20px;
+    }
+
+    .plano_mobile-paragrafo {
+        font-size: 15.52px;
+        color: #656565;
+    }
+
+    .plano_mobile-valor {
+        font-size: 24px;
+    }
+
+    .plano_mobile-paragrafo_secundario {
+        
+    }
+    .plano_mobile-excecao {
+        font-size: 14px;
+    }
+
+    .plano_mobile-fidelidade {
+        font-size: 12px;
+        color: #656565;
+    }
+
+    .plano_mobile-botao {
+        padding: 0.8em 7em;
+        background-color: #ff5c00;
+        border-radius: 2em;
+        align-self: center;
+        text-decoration: none;
+        color: #000000;
+        font-weight: bold;
+    }
+
+    .tabela-active_1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+        gap: 1.2em;
+    }
+
+    .tabela-desactive_1 {
+        display: none;
+    }
+
+    .tabela-active_2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+        gap: 1.2em;
+    }
+
+    .tabela-desactive_2 {
+        display: none;
+    }
+
+    .tabela-active_3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+        gap: 1.2em;
+    }
+
+    .tabela-desactive_3 {
+        display: none;
+    }
+
+    .plano_mobile-beneficios {
+        display: flex;
+        align-items: center;
+        gap: 0.5em;
+        font-size: 15.52px;
+        color: #656565;
+    }
+
+    .plano_mobile_button {
+        background: none; /* Remove o fundo */
+        border: none;     /* Remove a borda, se necessário */
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+    }
+
+    .button_texto {
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .button_seta {
+        width: 20px;
     }
 }
