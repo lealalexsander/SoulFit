@@ -25,42 +25,17 @@ function closeModal() {
     const modal = document.getElementById("modal");
     modal.style.display = "none"; // Oculta o modal
 }
+function toggleTabela(planoId) {
+    const descricao_tabela = document.getElementById(`tabela-active_${planoId}`);
+    let button_seta = document.getElementById(`button-plano_${planoId}`);
 
-function mostrarMenos1() {
-    const descricao_tabela = document.getElementById("tabela-active_1");
-    let button_seta = document.getElementById("button-plano_1");
-
-    if(descricao_tabela.className === "tabela-active_1") {
-        descricao_tabela.className = "tabela-desactive_1";
-        button_seta.innerHTML = '<h3 class="button_texto">Mostrar mais</h3>       <img id="button_seta" class="button_seta" src="./src/icon/seta-para-baixo.png" alt="seta para baixo">'
+    if (descricao_tabela.classList.contains("tabela-active")) {
+        descricao_tabela.classList.remove("tabela-active");
+        descricao_tabela.classList.add("tabela-desactive");
+        button_seta.innerHTML = '<h3 class="button_texto">Mostrar mais</h3><img class="button_seta" src="./src/icon/seta-para-baixo.png" alt="seta para baixo">';
     } else {
-        descricao_tabela.className = "tabela-active_1";
-        button_seta.innerHTML = '<h3 class="button_texto">Mostrar menos</h3>       <img id="button_seta" class="button_seta" src="./src/icon/seta-para-cima.png" alt="seta para cima">'
-    }
-}
-
-function mostrarMenos2() {
-    const descricao_tabela = document.getElementById("tabela-active_2");
-    let button_seta = document.getElementById("button-plano_2");
-
-    if(descricao_tabela.className === "tabela-active_2") {
-        descricao_tabela.className = "tabela-desactive_2";
-        button_seta.innerHTML = '<h3 class="button_texto">Mostrar mais</h3>       <img id="button_seta" class="button_seta" src="./src/icon/seta-para-baixo.png" alt="seta para baixo">'
-    } else {
-        descricao_tabela.className = "tabela-active_2";
-        button_seta.innerHTML = '<h3 class="button_texto">Mostrar menos</h3>       <img id="button_seta" class="button_seta" src="./src/icon/seta-para-cima.png" alt="seta para cima">'
-    }
-}
-
-function mostrarMenos3() {
-    const descricao_tabela = document.getElementById("tabela-active_3");
-    let button_seta = document.getElementById("button-plano_3");
-
-    if(descricao_tabela.className === "tabela-active_3") {
-        descricao_tabela.className = "tabela-desactive_3";
-        button_seta.innerHTML = '<h3 class="button_texto">Mostrar mais</h3>       <img id="button_seta" class="button_seta" src="./src/icon/seta-para-baixo.png" alt="seta para baixo">'
-    } else {
-        descricao_tabela.className = "tabela-active_3";
-        button_seta.innerHTML = '<h3 class="button_texto">Mostrar menos</h3>       <img id="button_seta" class="button_seta" src="./src/icon/seta-para-cima.png" alt="seta para cima">'
+        descricao_tabela.classList.remove("tabela-desactive");
+        descricao_tabela.classList.add("tabela-active");
+        button_seta.innerHTML = '<h3 class="button_texto">Mostrar menos</h3><img class="button_seta" src="./src/icon/seta-para-cima.png" alt="seta para cima">';
     }
 }

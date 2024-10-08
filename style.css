@@ -982,41 +982,18 @@ footer {
         font-weight: bold;
     }
 
-    .tabela-active_1 {
+    .tabela-active {
         display: flex;
         flex-direction: column;
         justify-content: center;
         padding: 0;
         gap: 1.2em;
     }
-
-    .tabela-desactive_1 {
+    
+    .tabela-desactive {
         display: none;
     }
-
-    .tabela-active_2 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 0;
-        gap: 1.2em;
-    }
-
-    .tabela-desactive_2 {
-        display: none;
-    }
-
-    .tabela-active_3 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 0;
-        gap: 1.2em;
-    }
-
-    .tabela-desactive_3 {
-        display: none;
-    }
+    
 
     .plano_mobile-beneficios {
         display: flex;
